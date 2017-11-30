@@ -1,4 +1,4 @@
 <?php
-$my_name='Аман';
-echo my_name;
+$name='Аман';
+echo $name;
 ?>
