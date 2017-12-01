@@ -1,9 +1,10 @@
 ﻿<?php
-$translate = $_POST['translate']; 
-if($translate=="Препроцессор гипертекста") {
-	echo "Верно!<br>";
-}
-else {
-	echo "Не знаете? \"Препроцессор гипертекста\"!";
+$a = $_POST['a']; 
+if($a<0) {
+	echo "Минус<br>";
+} elseif ($a>0) {
+	echo "Плюс<br>";
+} else {
+	echo "Ноль<br>";
 }
 ?> 
