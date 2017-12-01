@@ -15,4 +15,6 @@ if("ddvdv") {
 //-----
 echo (null OR 2 OR undefined) . "<br>";
 //---
+echo (1 AND null AND 2 ) . "<br>";
+//---
 ?>
