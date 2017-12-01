@@ -17,4 +17,5 @@ echo (null OR 2 OR undefined) . "<br>";
 //---
 echo (1 AND null AND 2 ) . "<br>";
 //---
+echo ( null OR 2 AND 3 OR 4 ) . "<br>";
 ?>
