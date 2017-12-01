@@ -1,6 +1,9 @@
 ﻿<?php
-$a = $_POST['a']; 
-$b = $_POST['b'];
-$c = $a + $b;
-echo "Сумма = " . $c.'<br>';
+$translate = $_POST['translate']; 
+if($translate=="Препроцессор гипертекста") {
+	echo "Верно!<br>";
+}
+else {
+	echo "Не знаете? \"Препроцессор гипертекста\"!";
+}
 ?> 
