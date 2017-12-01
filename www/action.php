@@ -1,2 +1,6 @@
-﻿Здравствуйте, <?php echo htmlspecialchars($_POST['name']); ?>.
-Вам <?php echo (int)$_POST['age']; ?> лет.
+﻿<?php
+$a = $_POST['a']; 
+$b = $_POST['b'];
+$c = $a + $b;
+echo "Сумма = " . $c.'<br>';
+?> 
