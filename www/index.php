@@ -1,4 +1,3 @@
 <?php
-$name='Аман';
-echo $name;
+echo $_SERVER['HTTP_USER_AGENT'];
 ?>
