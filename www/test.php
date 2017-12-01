@@ -12,4 +12,7 @@ else {
 if("ddvdv") {
 	echo "Привет<br>";
 }
+//-----
+echo (null OR 2 OR undefined) . "<br>";
+//---
 ?>
