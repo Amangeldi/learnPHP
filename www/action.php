@@ -1,26 +1,13 @@
 ﻿<?php
-$role = $_POST['role']; 
+$browser = $_POST['browser']; 
 $button = $_GET['button'];
-$password = $_POST['password'];
-$STR = <<<ABC
-<form action="action.php" method="post">
- <p>Пароль? <input type="text" name="password" /></p>
- <p><input type="submit" value="Войти" /></p>
-</form>
-<form><input type="button" value="Отмена" onClick='location.href="http://php1.ru/action.php?button=cancel"'></form>
-ABC;
 if($button=="cancel") {
 	echo "Вход отменен<br>";
-} elseif($role == "Админ") {
-	echo $STR;
-} elseif($role != "Админ" AND $role >0) {
-	echo "Я вас не знаю<br>";
-	echo $_GET['rty'];
-	$flag = 1;
-}
-if($password=="Черный Властелин"){
-		echo "Добро пожаловать!";
-} elseif($button!="cancel" AND $role != "Админ" AND $flag==0) {
-	echo "Пароль неверен<br>";
+} elseif($browser == 'Chrome' OR $browser == 'Firefox' OR $browser == 'Safari' OR $browser == 'Opera') {
+	echo "Да, и эти браузеры мы поддерживаем<br>";
+} elseif ($browser == 'IE') {
+	echo "О, да у вас IE!<br>";
+} else {
+	echo "Мы надеемся, что и в вашем браузере все ок!<br>";
 }
 ?> 
