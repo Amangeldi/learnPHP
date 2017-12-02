@@ -24,4 +24,20 @@ while($a<3) {
 	echo "Номер $a!<br>";
 	$a++;
 }
+//---
+$min = 2;
+$max = 10;
+$flag = true;
+for(;$min<=$max;){
+	for($i=2;$i <= $min-1; $i++){
+		if($min%$i==0) {
+			$flag = false;
+		}
+	}
+	if ($flag == true) {
+		echo "$min, ";
+	}
+	$min++;
+	$flag=true;
+}
 ?>
