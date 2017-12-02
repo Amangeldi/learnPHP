@@ -57,5 +57,5 @@ $number = $_POST["number"];
 do {
 	echo $STR; break;
 } while ($number<100);
-if($number>100) echo "Число больше 100";
+if($number>100) echo "Число больше 100<br>";
 ?>
