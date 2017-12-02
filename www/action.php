@@ -1,13 +1,13 @@
 ﻿<?php
-$browser = $_POST['browser']; 
+$a = $_POST['a']; 
 $button = $_GET['button'];
 if($button=="cancel") {
 	echo "Вход отменен<br>";
-} elseif($browser == 'Chrome' OR $browser == 'Firefox' OR $browser == 'Safari' OR $browser == 'Opera') {
-	echo "Да, и эти браузеры мы поддерживаем<br>";
-} elseif ($browser == 'IE') {
-	echo "О, да у вас IE!<br>";
-} else {
-	echo "Мы надеемся, что и в вашем браузере все ок!<br>";
+} 
+switch($a) {
+	case(0): echo 0; break;
+	case(1): echo 1; break;
+	case(2):
+	case(3): echo "2,3"; break;
 }
 ?> 
