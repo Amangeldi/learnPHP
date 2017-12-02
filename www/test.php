@@ -40,4 +40,22 @@ for(;$min<=$max;){
 	$min++;
 	$flag=true;
 }
+echo "<br>";
+//---
+$STR = <<<ABS
+<form action="test.php" method="post">
+ <p>¬ведите число: <input type="text" name="number" /></p>
+ <p><input type="submit" value="¬вод" /></p>
+</form>
+<form><input type="button" value="ќтмена" onClick='location.href="http://php1.ru/test.php?button=cancel"'></form>
+ABS;
+$button = $_GET['button'];
+if($button=="cancel") {
+	echo "ќтмена<br>";
+}
+$number = $_POST["number"];
+do {
+	echo $STR; break;
+} while ($number<100);
+if($number>100) echo "„исло больше 100";
 ?>
