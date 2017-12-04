@@ -1,12 +1,5 @@
-﻿<html>
-<head>
-<title>Использование команды include</title>
-</head>
-<body>
-<?php
-include "content.html";
-require "config.php";
-echo $password;
+﻿<?php
+$goods = array("Компуктер","Ноут","Планшет");
+$index = count($goods)-1;
+echo $goods[$index];
 ?>
-</body>
-</html>
